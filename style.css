@@ -62,7 +62,7 @@ html, body {
   top: 0;
   z-index: 100;
   background: rgba(8, 14, 35, 0.75);
-  backdrop-filter: blur(30px);
+  -webkit-animation-blur: blur(30px);
   border-bottom: 1px solid var(--glass-border);
   padding: 0 24px;
   height: 64px;
@@ -127,7 +127,7 @@ html, body {
   top: calc(100% + 8px);
   left: 0; right: 0;
   background: rgba(10,16,40,0.97);
-  backdrop-filter: blur(30px);
+  -webkit-animation-blur: blur(30px);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow);
@@ -188,7 +188,7 @@ html, body {
 /* ── GLASS CARD BASE ── */
 .card {
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
+  -webkit-animation-blur: var(--glass-blur);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow);
@@ -309,7 +309,7 @@ html, body {
   gap: 5px;
   padding: 16px 12px;
   background: var(--glass-bg);
-  backdrop-filter: var(--glass-blur);
+  -webkit-animation-blur: var(--glass-blur);
   border: 1px solid var(--glass-border);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
@@ -532,7 +532,7 @@ html, body {
 .toast {
   background: rgba(10,16,40,0.95);
   border: 1px solid var(--glass-border);
-  backdrop-filter: blur(20px);
+  -webkit-animation-blur: blur(20px);
   color: var(--text-primary);
   padding: 12px 18px;
   border-radius: var(--radius-sm);
@@ -557,7 +557,7 @@ html, body {
 .globe-section {
   position: fixed; inset: 0;
   background: rgba(0,0,0,0.95);
-  backdrop-filter: blur(10px);
+  -webkit-animation-blur: blur(10px);
   z-index: 9999;
   display: none;
   overflow: hidden;
@@ -575,26 +575,26 @@ html, body {
 #globeViz { width:100%; height:100%; cursor:grab; }
 #globeViz:active { cursor:grabbing; }
 .globe-controls-overlay { position:absolute; top:20px; right:20px; display:flex; flex-direction:column; align-items:center; gap:8px; z-index:10; }
-.globe-control-btn { width:40px; height:40px; background:rgba(0,0,0,.65); backdrop-filter:blur(10px); border:2px solid rgba(0,198,255,.5); border-radius:10px; color:#00c6ff; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:.2s; font-family:var(--font-main); }
+.globe-control-btn { width:40px; height:40px; background:rgba(0,0,0,.65); -webkit-animation-blur: blur(10px); border:2px solid rgba(0,198,255,.5); border-radius:10px; color:#00c6ff; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:.2s; font-family:var(--font-main); }
 .globe-control-btn:hover  { background:rgba(0,198,255,.25); border-color:#00c6ff; transform:scale(1.1); }
 .globe-control-btn:active { transform:scale(.95); }
 .globe-control-btn .material-symbols-outlined { font-size:20px; }
 .globe-arrow-controls { display:flex; flex-direction:column; align-items:center; gap:4px; margin-top:6px; }
 .globe-arrow-middle   { display:flex; gap:4px; }
-.globe-arrow-btn { width:36px; height:36px; background:rgba(0,0,0,.65); backdrop-filter:blur(10px); border:2px solid rgba(0,198,255,.4); border-radius:8px; color:#00c6ff; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:.15s; user-select:none; }
+.globe-arrow-btn { width:36px; height:36px; background:rgba(0,0,0,.65); -webkit-animation-blur: blur(10px); border:2px solid rgba(0,198,255,.4); border-radius:8px; color:#00c6ff; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:.15s; user-select:none; }
 .globe-arrow-btn:hover  { background:rgba(0,198,255,.25); }
 .globe-arrow-btn:active { background:rgba(0,198,255,.45); transform:scale(.92); }
 .globe-arrow-btn .material-symbols-outlined { font-size:18px; }
-.globe-info-overlay { position:absolute; top:20px; left:20px; background:rgba(0,0,0,.75); backdrop-filter:blur(10px); padding:14px; border-radius:12px; display:flex; flex-direction:column; gap:12px; border:1px solid rgba(0,198,255,.3); min-width:200px; z-index:10; }
+.globe-info-overlay { position:absolute; top:20px; left:20px; background:rgba(0,0,0,.75); -webkit-animation-blur: blur(10px); padding:14px; border-radius:12px; display:flex; flex-direction:column; gap:12px; border:1px solid rgba(0,198,255,.3); min-width:200px; z-index:10; }
 .globe-info-item { display:flex; align-items:center; gap:10px; color:white; }
 .globe-info-item .material-symbols-outlined { font-size:22px; color:#00c6ff; }
 .globe-info-label { font-size:10px; opacity:.7; text-transform:uppercase; letter-spacing:1px; }
 .globe-info-value { font-size:14px; font-weight:600; color:white; word-break:break-word; }
-.globe-instructions { position:absolute; bottom:20px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,.7); backdrop-filter:blur(10px); padding:9px 18px; border-radius:20px; color:white; font-size:12px; border:1px solid rgba(0,198,255,.3); white-space:nowrap; z-index:10; }
+.globe-instructions { position:absolute; bottom:20px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,.7); -webkit-animation-blur: blur(10px); padding:9px 18px; border-radius:20px; color:white; font-size:12px; border:1px solid rgba(0,198,255,.3); white-space:nowrap; z-index:10; }
 .globe-weather-boxes { width:300px; display:flex; flex-direction:column; gap:12px; overflow-y:auto; padding-right:4px; }
 .globe-weather-boxes::-webkit-scrollbar { display:none; }
 .globe-empty-state { flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; padding:20px; border:2px dashed rgba(0,198,255,.3); border-radius:15px; }
-.globe-weather-box { background:rgba(255,255,255,.05); backdrop-filter:blur(15px); border-radius:15px; padding:16px; display:flex; align-items:center; gap:14px; border:2px solid rgba(0,198,255,.3); transition:.3s; }
+.globe-weather-box { background:rgba(255,255,255,.05); -webkit-animation-blur: blur(15px); border-radius:15px; padding:16px; display:flex; align-items:center; gap:14px; border：2px solid rgba(0,198,255,.3); transition:.3s; }
 .globe-weather-box:hover { background:rgba(255,255,255,.1); border-color:rgba(0,198,255,.6); transform:translateX(-4px); }
 .globe-box-icon { font-size:32px; color:#00c6ff; flex-shrink:0; }
 .globe-box-label { font-size:10px; color:rgba(255,255,255,.6); text-transform:uppercase; letter-spacing:1px; margin-bottom:3px; }
